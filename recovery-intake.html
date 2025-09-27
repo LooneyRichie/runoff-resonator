@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Auto-Recovery Setup - Runoff Resonator Mass Reclamation Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="Runoff Resonator" class="logo">
+                Runoff Resonator
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recovery-intake.html" class="active">Recovery Form</a></li>
+                <li><a href="agency-portal.html">Agency Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>💰 Hire Us to Recover Your Money</h1>
+                <p class="hero-subtitle">We do all the work for you - because getting your money back can be a real hassle</p>
+                <p class="hero-subtitle">⚡ We handle subscriptions, billing errors, insurance claims & government benefits</p>
+                <div class="proven-stats">
+                    <span class="stat">91.6% Success Rate</span> • 
+                    <span class="stat">$311 Avg Recovery</span> • 
+                    <span class="stat">100+ People Helped</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <div class="intake-form">
+                    <h2>Tell Us About Your Money Recovery Needs</h2>
+                    <p><strong>We do the work, you collect the money.</strong> Fill out this form and we'll handle everything for you.</p>
+                    <form id="recoveryForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Legal Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Current Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+
+                        <h2>Recovery Details</h2>
+
+                        <div class="form-group">
+                            <label for="lossType">Type of Loss (check all that apply)</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="lossType" value="tax-refund"> Tax Refund</label>
+                                <label><input type="checkbox" name="lossType" value="stimulus"> Stimulus Payment</label>
+                                <label><input type="checkbox" name="lossType" value="unemployment"> Unemployment Benefits</label>
+                                <label><input type="checkbox" name="lossType" value="government-contract"> Government Contract Payment</label>
+                                <label><input type="checkbox" name="lossType" value="social-security"> Social Security</label>
+                                <label><input type="checkbox" name="lossType" value="medicare"> Medicare/Medicaid</label>
+                                <label><input type="checkbox" name="lossType" value="other"> Other Government Payment</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="estimatedAmount">Estimated Amount Owed</label>
+                            <select id="estimatedAmount" name="estimatedAmount">
+                                <option value="">Select range</option>
+                                <option value="under-1000">Under $1,000</option>
+                                <option value="1000-5000">$1,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-25000">$10,000 - $25,000</option>
+                                <option value="25000-50000">$25,000 - $50,000</option>
+                                <option value="over-50000">Over $50,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeFrame">When did the loss occur?</label>
+                            <input type="text" id="timeFrame" name="timeFrame" placeholder="e.g., March 2023, Tax Year 2022">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">State Where Loss Occurred</label>
+                            <input type="text" id="state" name="state" placeholder="e.g., California, Texas">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documentation">Do you have supporting documents?</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="documentation" value="tax-returns"> Tax Returns</label>
+                                <label><input type="checkbox" name="documentation" value="bank-statements"> Bank Statements</label>
+                                <label><input type="checkbox" name="documentation" value="government-letters"> Government Letters</label>
+                                <label><input type="checkbox" name="documentation" value="claim-numbers"> Existing Claim Numbers</label>
+                                <label><input type="checkbox" name="documentation" value="none"> No Documentation</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" 
+                                placeholder="Please provide any additional details about your situation..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="consent-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                I understand that Runoff Resonator charges a 15% success fee only if money is successfully recovered. No upfront fees are required.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cta-button">Submit Recovery Request</button>
+                    </form>
+
+                    <div id="formSuccess" class="success-message" style="display: none;">
+                        <h3>Thank you for your submission!</h3>
+                        <p>We'll review your information within 24 hours and contact you with next steps. You should receive a detailed response at the email address you provided.</p>
+                        <p><strong>What happens next:</strong></p>
+                        <ol>
+                            <li>We'll cross-reference your information with our detected signals</li>
+                            <li>If we find potential matches, we'll send you our automated recovery plan</li>
+                            <li>We'll handle all steps of the claim process for you</li>
+                            <li>You only pay our 15% fee if we successfully recover your money</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Runoff Resonator</h3>
+                    <p>Detecting and recovering economic signals for individuals and communities.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Individual Recovery</li>
+                        <li>Signal Detection</li>
+                        <li>Government Collaboration</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: ultraseekerlooney+recovery@gmail.com</p>
+                    <p>Response time: 24 hours</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Runoff Resonator by Richie Looney. Monitoring economic signals since 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('recoveryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Handle regular fields
+            for (let [key, value] of formData.entries()) {
+                if (data[key]) {
+                    if (Array.isArray(data[key])) {
+                        data[key].push(value);
+                    } else {
+                        data[key] = [data[key], value];
+                    }
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            // Handle checkboxes
+            const checkboxGroups = ['lossType', 'documentation'];
+            checkboxGroups.forEach(group => {
+                const checkboxes = document.querySelectorAll(`input[name="${group}"]:checked`);
+                data[group] = Array.from(checkboxes).map(cb => cb.value);
+            });
+            
+            // Create email body
+            const emailBody = `
+Recovery Request Submission
+Date: ${new Date().toLocaleDateString()}
+
+PERSONAL INFORMATION:
+Name: ${data.fullName}
+Email: ${data.email}
+Phone: ${data.phone}
+Address: ${data.address}
+
+RECOVERY DETAILS:
+Loss Type(s): ${data.lossType ? data.lossType.join(', ') : 'Not specified'}
+Estimated Amount: ${data.estimatedAmount || 'Not specified'}
+Time Frame: ${data.timeFrame || 'Not specified'}
+State: ${data.state || 'Not specified'}
+Documentation Available: ${data.documentation ? data.documentation.join(', ') : 'None specified'}
+
+ADDITIONAL INFO:
+${data.additionalInfo || 'None provided'}
+
+CONSENT: ${data.consent ? 'Yes - Understands 15% success fee structure' : 'No'}
+
+---
+This submission was generated from the Runoff Resonator recovery intake form.
+            `.trim();
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Recovery Request - ${data.fullName}`);
+            const body = encodeURIComponent(emailBody);
+            const mailtoLink = `mailto:ultraseekerlooney+recovery@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            document.getElementById('recoveryForm').style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
